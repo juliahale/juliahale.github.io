@@ -1,0 +1,120 @@
+Last login: Tue Aug 29 15:02:22 on console
+c27jh@C27JH-FVFHT9APQ6L4 ~ % ls
+Desktop		Downloads	Movies		Pictures
+Documents	Library		Music		Public
+c27jh@C27JH-FVFHT9APQ6L4 ~ % cd ./desktop 
+c27jh@C27JH-FVFHT9APQ6L4 desktop % ls
+Screenshot 2023-09-08 at 12.46.41 PM.png
+Screenshot 2023-09-12 at 8.13.02 PM.png
+Screenshot 2023-09-14 at 7.12.56 PM.png
+Screenshot 2023-09-14 at 7.13.00 PM.png
+Screenshot 2023-09-14 at 9.00.55 AM.png
+Screenshot 2023-09-14 at 9.16.02 AM.png
+Screenshot 2023-09-14 at 9.16.40 AM.png
+Screenshot 2023-09-14 at 9.16.46 AM.png
+Screenshot 2023-09-17 at 9.06.33 PM.png
+Screenshot 2023-09-18 at 4.51.30 PM.png
+Screenshot 2023-09-18 at 5.11.06 PM.png
+Screenshot 2023-09-18 at 5.11.12 PM.png
+Screenshot 2023-09-19 at 1.49.44 PM.png
+d3515041e6b79a5ee0a629d7603c47a3.jpg
+desktop
+square.html
+website
+c27jh@C27JH-FVFHT9APQ6L4 desktop % cd
+c27jh@C27JH-FVFHT9APQ6L4 ~ % cd ./juliahale.github.io
+cd: no such file or directory: ./juliahale.github.io
+c27jh@C27JH-FVFHT9APQ6L4 ~ % cd ./desktop/juliahale.github.io
+c27jh@C27JH-FVFHT9APQ6L4 juliahale.github.io % echo "# juliahale.github.io" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/juliahale/juliahale.github.io.git
+git push -u origin main
+Initialized empty Git repository in /Users/c27jh/Desktop/juliahale.github.io/.git/
+[main (root-commit) 1f1ffbc] first commit
+ Committer: Julia Hale <c27jh@c27jh-fvfht9apq6l4.dalton.org>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+Username for 'https://github.com': juliahale
+Password for 'https://juliahale@github.com': 
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 246 bytes | 246.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/juliahale/juliahale.github.io.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+c27jh@C27JH-FVFHT9APQ6L4 juliahale.github.io % git add .
+c27jh@C27JH-FVFHT9APQ6L4 juliahale.github.io % git commit -m "molly adding things"
+[main ee1f32d] molly adding things
+ Committer: Julia Hale <c27jh@c27jh-fvfht9apq6l4.dalton.org>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 4 files changed, 57 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 journal
+ create mode 100644 projects.html
+ create mode 100644 square.html
+c27jh@C27JH-FVFHT9APQ6L4 juliahale.github.io % git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 950 bytes | 950.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/juliahale/juliahale.github.io.git
+   1f1ffbc..ee1f32d  main -> main
+c27jh@C27JH-FVFHT9APQ6L4 juliahale.github.io % git add .
+c27jh@C27JH-FVFHT9APQ6L4 juliahale.github.io % git commit -m "Molly adding things"
+[main e70062d] Molly adding things
+ Committer: Julia Hale <c27jh@c27jh-fvfht9apq6l4.dalton.org>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 7 insertions(+), 1 deletion(-)
+ create mode 100644 background.png
+ create mode 100644 star.png
+c27jh@C27JH-FVFHT9APQ6L4 juliahale.github.io % git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 137.20 KiB | 27.44 MiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/juliahale/juliahale.github.io.git
+   ee1f32d..e70062d  main -> main
+c27jh@C27JH-FVFHT9APQ6L4 juliahale.github.io % 
