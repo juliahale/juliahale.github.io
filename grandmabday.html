@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<h1>
+		click on the present!
+	</h1>
+
+	<title></title>
+	<style type="text/css">
+
+		#present{
+			width:400px;
+			height:400px;
+			background-size:contain;
+			background-repeat: no-repeat;
+			background-image:url(https://i.pinimg.com/originals/1e/f4/db/1ef4db9a695c277bdd2c09907a943045.png);
+		}
+	</style>
+</head>
+
+<body>
+
+	<center><div id="present">
+	</div>
+</center>
+
+<script type="text/javascript">
+
+	var count = 0
+	present.addEventListener("click", function(){
+		count = count+1;
+		console.log(count)
+		if (count == 1){
+			present.style.backgroundImage ="url(https://i.pinimg.com/564x/01/e9/31/01e9316d6d2b718366d54edc99228519.jpg)"
+		}
+		if (count == 2){
+			present.style.backgroundImage ="url()"
+		}
+		if (count == 3){
+			present.style.backgroundImage ="url()"
+		}
+	})
+	
+</script>
+
+</body>
+</html>

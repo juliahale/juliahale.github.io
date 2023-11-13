@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</div>
+	<style type="text/css">
+		.row {
+			display: table;
+			width: 100%;
+			table-layout: fixed;
+			border-spacing: 10px;
+
+		}
+
+		.column {
+			display: table-cell;
+			background-image: url(https://i.pinimg.com/564x/0a/3a/fb/0a3afbcb1f335345c5f5140e1a047103.jpg);
+			height:100px;
+			with:100px;
+			background-size: contain;
+			background-repeat: no-repeat;
+			color:  rgba(200, 100, 170, 0);
+			font-size: 20px;
+			text-align: center;
+			padding-top: 20px;
+		}
+body{
+	margin: 20px;
+	background-color: #;
+
+	</style>
+
+
