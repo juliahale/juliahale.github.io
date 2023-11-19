@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+		
+</head>
+
+<body>
+	<div id="surprise"></div>
+	
+<script type="text/javascript">
+	var clickCounter = 0;
+	document.addEventListener("click", function countClicks(){
+		clickCounter = clickCounter +1;
+
+		if (clickCounter ==1){
+			document.body.style.backgroundColor = "blue"
+
+		}
+		if (clickCounter ==2){
+			document.body.style.backgroundColor = "green"
+
+		}
+	})
+</script>
+
+	
+</body>
+</html>
