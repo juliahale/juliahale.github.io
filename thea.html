@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      text-align: center;
+      background-color: #ffccff;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+    }
+
+    h1 {
+      color: #00cc66;
+    }
+
+    button {
+      font-size: 18px;
+      padding: 10px 20px;
+      margin-top: 20px;
+      cursor: pointer;
+      background-color: #ff6666;
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background-color: #ff3300;
+    }
+
+    #message {
+      font-size: 16px;
+      color: #333333;
+      margin-top: 20px;
+    }
+
+    #dancingEmoji {
+      font-size: 40px;
+      margin-top: 30px;
+      animation: dance 1s infinite alternate;
+    }
+
+    @keyframes dance {
+      from { transform: translateY(0); }
+      to { transform: translateY(20px); }
+    }
+  </style>
+  <title>The's Super Silly Website</title>
+</head>
+<body>
+  <h1>Welcome to The's Super Silly Website!</h1>
+  <button id="colorButton">Click me for silly colors!</button>
+  <p id="message">This website is dedicated to The!</p>
+  <div id="dancingEmoji">🕺</div>
+
+  <script>
+    // Get elements
+    const colorButton = document.getElementById('colorButton');
+    const messageElement = document.getElementById('message');
+    const dancingEmoji = document.getElementById('dancingEmoji');
+
+    // Function to generate a random color
+    function getRandomColor() {
+      const letters = '0123456789ABCDEF';
+      let color = '#';
+      for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+
+    // Function to change the button color and display a message
+    function changeButtonColor() {
+      const newColor = getRandomColor();
+      colorButton.style.backgroundColor = newColor;
+      messageElement.textContent = `The loves silly colors!`;
+    }
+
+    // Add an event listener to the button
+    colorButton.addEventListener('click', changeButtonColor);
+  </script>
+</body>
+</html>
