@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title></title>
+	<style type="text/css">
+		#snowman{
+			width:280px;
+			height:500px;
+			background-image:url(https://drydenart.weebly.com/uploads/8/9/6/1/8961653/snowman-template_orig.png);
+			background-size:contain;
+		}
+		.topping{
+			width:80px;
+			height:80px;
+			border:1px solid black;
+			display:inline-block;
+			margin:5px;
+			background-size:contain;
+			background-position:center;
+			background-repeat: no-repeat;
+		}
+		#carrot{
+			background-image:url(carrot.png);
+		}
+		#scarf{
+			background-image:url(scarf.png);
+		}
+		#stick{
+			background-image:url(stick.png);
+		}
+		#hat{
+			background-image:url(hat.png);
+		}
+		#smile{
+			background-image:url(https://images.fineartamerica.com/images/artworkimages/medium/3/smile-cartoon-simple-line-tom-hill-transparent.png);
+		}
+		#snowflake{
+			background-image:url(snowflake.png);
+		}
+		#flower{
+			background-image:url(mistletoe.png);
+		}
+		#button{
+			background-image:url(button1.png);
+		}
+
+</style>
+	
+</head>
+
+<body>
+	<div id="carrot" class="topping"></div>
+	<div id="scarf" class="topping"></div>
+	<div id="stick" class="topping"></div>
+	<div id="hat" class="topping"></div>
+	<div id="smile" class="topping"></div>
+	<div id="snowflake" class="topping"></div>
+	<div id="flower" class="topping"></div>
+	<div id="button" class="topping"></div>
+
+
+
+
+	<div id="snowman"></div>
+	
+	<script type="text/javascript">
+
+		var feature;
+		carrot.addEventListener("click", function(){
+			feature = "carrot.png"
+			console.log(feature)
+		})
+		
+		scarf.addEventListener("click", function(){
+			feature = "scarf.png"
+			console.log(feature)
+		})
+		
+		stick.addEventListener("click", function(){
+			feature = "stick.png"
+			console.log(feature)
+		})
+		
+		hat.addEventListener("click", function(){
+			feature = "hat.png"
+			console.log(feature)
+		})
+		
+		smile.addEventListener("click", function(){
+			feature = "https://images.fineartamerica.com/images/artworkimages/medium/3/smile-cartoon-simple-line-tom-hill-transparent.png"
+			console.log(feature)
+		})
+		
+		snowflake.addEventListener("click", function(){
+			feature = "snowflake.png"
+			console.log(feature)
+		})
+		
+		flower.addEventListener("click", function(){
+			feature = "mistletoe.png"
+			console.log(feature)
+		})
+		 
+		button.addEventListener("click", function(){
+			feature = "button1.png"
+			console.log(feature)
+		})
+		snowman.addEventListener("click", function makeDiv (event){
+			var snowmanpart = document.createElement('div');
+			document.body.appendChild(snowmanpart)
+			snowmanpart.classList.add('topping')
+			snowmanpart.style.position = "absolute"
+
+			snowmanpart.style.left = event.clientX-50 + "px"
+			snowmanpart.style.top = event.clientY-50 + "px"
+			snowmanpart.style.border = "0px"
+			snowmanpart.style.backgroundImage = "url("+ feature	+")"
+
+		})
+	</script>
+</body>
+</html>
