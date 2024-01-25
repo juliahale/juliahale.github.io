@@ -5,13 +5,29 @@
 	<title></title>
 </head>
 <body>
-Who in the class will go to jail first?
-	<script type="text/javascript">
-		var people =["jake", "thea", "julia", "jack", "sajan", "henry"]
-		var x = Math.round(Math.random()*5)
-		
+	<center><h1>guess a random number between 1 and 6</h1>
+	<div id="box"></div>
 
-		console.log(people[x])
+	<script type="text/javascript">
+		var number = -1;
+		var random;
+		// var people = ["url(celebrationemoji.png)", "url(https://www.cambridge.org/elt/blog/wp-content/uploads/2019/07/Sad-Face-Emoji.png)", "url(https://i.pinimg.com/originals/4b/6f/0f/4b6f0f786d32460c3eb9b9f1c68dcf69.png)", "url(https://1000logos.net/wp-content/uploads/2023/10/Wink-Emojis.png)", "url(cold-face.png)", "url(yummy.png)"]
+		// var x = Math.round(Math.random()*5)
+		var people = ["1","2","3","4","5","6"]
+
+		// console.log(people[x])
+		document.addEventListener("click", function(){
+			console.log("hello?")
+			random = Math.round(Math.random()*5)
+			number = number+1
+		box.innerText = people[random];
+		// box.style.backgroundImage = people[random];
+
+		if(number == 5){number = -1}
+		}
+
+
+	)
 
 
 	</script>

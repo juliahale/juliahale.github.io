@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title></title>
+	<style type="text/css">
+		div{
+			height: 600px;
+			width: 500px;
+			border: 5px solid black;
+			display: inline-block;
+			font-size: 30px;
+			background-size:cover;
+			background-repeat: no-repeat;
+			background-position: center;
+}
+		#box2{
+			font-size:20px;
+		}
+		
+
+
+		}
+	</style>
+</head>
+<body>
+	<center><h1>click to see what to make!</h1>
+	<div id="box1"></div>
+	<div id="box2"></div>
+</center>
+	<script type="text/javascript">
+		var random;
+		var recipes = ["https://joyfoodsunshine.com/the-most-amazing-chocolate-chip-cookies/","https://familystylefood.com/olive-oil-cocoa-brownies/","https://tastesbetterfromscratch.com/hersheys-perfectly-chocolate-chocolate-cake/","https://joyfoodsunshine.com/chocolate-chip-cookie-bars/","https://sallysbakingaddiction.com/easy-cinnamon-rolls-from-scratch/","https://alexandracooks.com/2017/10/24/artisan-sourdough-made-simple-sourdough-bread-demystified-a-beginners-guide-to-sourdough-baking/","https://www.cookingchanneltv.com/recipes/jeffrey-saad/nutella-crepes-2107511"]
+		var food = ["url(https://handletheheat.com/wp-content/uploads/2020/10/BAKERY-STYLE-CHOCOLATE-CHIP-COOKIES-9-637x637-1.jpg)","url(https://familystylefood.com/wp-content/uploads/2011/04/cocoa-brownie-familystylefood.jpg)","url(https://tastesbetterfromscratch.com/wp-content/uploads/2023/04/Hershey-Chocolate-Cake-8-2.jpg)","url(https://butternutbakeryblog.com/wp-content/uploads/2022/06/brown-butter-chocolate-chip-cookie-bars.jpg)","url(https://sallysbakingaddiction.com/wp-content/uploads/2013/05/easy-cinnamon-rolls-with-cream-cheese-frosting.jpg)","url(https://hips.hearstapps.com/hmg-prod/images/sourdough-bread-horizontal-466-1548048509.jpg?crop=1xw:0.843328335832084xh;center,top)","url(https://www.aheadofthyme.com/wp-content/uploads/2020/01/nutella-crepes.jpg)"]
+
+
+		document.addEventListener("click", function(){
+			random = Math.round(Math.random()*6)
+		box1.innerText = recipes[random];
+		box2.style.backgroundImage = food[random];
+
+	})
+
+</script>
+</body>
+</html>
