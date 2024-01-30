@@ -4,7 +4,7 @@
 	
 	<title></title>
 	<style type="text/css">
-		div{
+		.squares{
 			height: 600px;
 			width: 500px;
 			border: 5px solid black;
@@ -13,11 +13,20 @@
 			background-size:cover;
 			background-repeat: no-repeat;
 			background-position: center;
+			background-color:lavenderblush;
 }
-		#box2{
+		#text1{
+			width:200px;
+			height:200px;
 			font-size:20px;
-		}
+			position:relative;
+			top:0px;
+			left:0px;
 		
+		}
+		body{
+			background-color:lightskyblue;
+		}
 
 
 		}
@@ -25,19 +34,26 @@
 </head>
 <body>
 	<center><h1>click to see what to make!</h1>
-	<div id="box1"></div>
-	<div id="box2"></div>
+	<div class="squares" id="box1">
+		<span id="text1"></span>
+		
+	</div>
+	<div class="squares" id="box2">
+		<div id="text0" style="opacity:0";></div>
+	</div>
 </center>
 	<script type="text/javascript">
 		var random;
-		var recipes = ["https://joyfoodsunshine.com/the-most-amazing-chocolate-chip-cookies/","https://familystylefood.com/olive-oil-cocoa-brownies/","https://tastesbetterfromscratch.com/hersheys-perfectly-chocolate-chocolate-cake/","https://joyfoodsunshine.com/chocolate-chip-cookie-bars/","https://sallysbakingaddiction.com/easy-cinnamon-rolls-from-scratch/","https://alexandracooks.com/2017/10/24/artisan-sourdough-made-simple-sourdough-bread-demystified-a-beginners-guide-to-sourdough-baking/","https://www.cookingchanneltv.com/recipes/jeffrey-saad/nutella-crepes-2107511"]
-		var food = ["url(https://handletheheat.com/wp-content/uploads/2020/10/BAKERY-STYLE-CHOCOLATE-CHIP-COOKIES-9-637x637-1.jpg)","url(https://familystylefood.com/wp-content/uploads/2011/04/cocoa-brownie-familystylefood.jpg)","url(https://tastesbetterfromscratch.com/wp-content/uploads/2023/04/Hershey-Chocolate-Cake-8-2.jpg)","url(https://butternutbakeryblog.com/wp-content/uploads/2022/06/brown-butter-chocolate-chip-cookie-bars.jpg)","url(https://sallysbakingaddiction.com/wp-content/uploads/2013/05/easy-cinnamon-rolls-with-cream-cheese-frosting.jpg)","url(https://hips.hearstapps.com/hmg-prod/images/sourdough-bread-horizontal-466-1548048509.jpg?crop=1xw:0.843328335832084xh;center,top)","url(https://www.aheadofthyme.com/wp-content/uploads/2020/01/nutella-crepes.jpg)"]
+		var recipes = ["https://joyfoodsunshine.com/the-most-amazing-chocolate-chip-cookies/","https://familystylefood.com/olive-oil-cocoa-brownies/","https://tastesbetterfromscratch.com/hersheys-perfectly-chocolate-chocolate-cake/","https://joyfoodsunshine.com/chocolate-chip-cookie-bars/","https://sallysbakingaddiction.com/easy-cinnamon-rolls-from-scratch/","https://alexandracooks.com/2017/10/24/artisan-sourdough-made-simple-sourdough-bread-demystified-a-beginners-guide-to-sourdough-baking/","https://www.cookingchanneltv.com/recipes/jeffrey-saad/nutella-crepes-2107511","https://sallysbakingaddiction.com/best-banana-bread-recipe/","https://sallysbakingaddiction.com/apple-pie-recipe/","https://handletheheat.com/soft-chewy-sugar-cookies/","https://sallysbakingaddiction.com/blueberry-muffins/","https://www.browneyedbaker.com/eclairs-and-cream-puffs/"]
+		var food = ["url(https://handletheheat.com/wp-content/uploads/2020/10/BAKERY-STYLE-CHOCOLATE-CHIP-COOKIES-9-637x637-1.jpg)","url(https://familystylefood.com/wp-content/uploads/2011/04/cocoa-brownie-familystylefood.jpg)","url(https://tastesbetterfromscratch.com/wp-content/uploads/2023/04/Hershey-Chocolate-Cake-8-2.jpg)","url(https://butternutbakeryblog.com/wp-content/uploads/2022/06/brown-butter-chocolate-chip-cookie-bars.jpg)","url(https://sallysbakingaddiction.com/wp-content/uploads/2013/05/easy-cinnamon-rolls-with-cream-cheese-frosting.jpg)","url(https://hips.hearstapps.com/hmg-prod/images/sourdough-bread-horizontal-466-1548048509.jpg?crop=1xw:0.843328335832084xh;center,top)","url(https://www.aheadofthyme.com/wp-content/uploads/2020/01/nutella-crepes.jpg)","url(https://publish-p50513-e440257.adobeaemcloud.com/content/dam/hersheyland/en-us/recipes/recipe-images/80-chocolate-chip-banana-bread-cropped.png)","url(https://sallysbakingaddiction.com/wp-content/uploads/2023/09/apple-pie-with-fluted-edges.jpg)","url(https://handletheheat.com/wp-content/uploads/2021/09/best-soft-and-chewy-sugar-cookies-SQUARE.jpg)","url(https://www.rainbownourishments.com/wp-content/uploads/2022/03/vegan-blueberry-muffins-1-1.jpg)","url(https://sallysbakingaddiction.com/wp-content/uploads/2019/04/scone-varieties.jpg)","url(https://www.browneyedbaker.com/wp-content/uploads/2021/04/eclairs-10-square.jpg)"]
 
 
 		document.addEventListener("click", function(){
-			random = Math.round(Math.random()*6)
-		box1.innerText = recipes[random];
+			random = Math.round(Math.random()*12)
+		text1.innerText = recipes[random];
 		box2.style.backgroundImage = food[random];
+		box1.style.top = "0px";
+		text0.innerText = "picturespicturespicturespictupicturespicturesrespicturespictures"
 
 	})
 
