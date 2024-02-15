@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title></title>
+	<style type="text/css">
+		
+	</style>
+</head>
+<body>
+
+type in a name and get your chances of winning the lottery... <br>
+	<input id="text"></input>
+	<button id="submit">submit</button>
+
+	<div id="answer"></div>
+	<script type="text/javascript">
+		submit.addEventListener("click", function(){
+			console.log(text.value)
+
+			if (text.value =="julia") {
+				alert("wow! 100%!")
+				answer.innerText = " "
+			}
+			if (text.value =="Julia") {
+				alert("wow! 100%!");
+				answer.innerText = " "
+			}
+			// else {
+			// 	alert("ehhhh")
+			// }
+			else {
+				answer.innerText = "nice! your chances are " + Math.round(Math.random()*100) + " percent"
+			}
+
+		})
+	</script>
+</body>
+</html>

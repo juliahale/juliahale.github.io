@@ -1,0 +1,41 @@
+car2.html
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title></title>
+	<style type="text/css">
+		#car{
+		width:550px;
+		height: 150px;
+/*		background-color:paleturquoise;*/
+		background-image: url("https://images-porsche.imgix.net/-/media/65786139D22F427E8EF7AB4E564E60FD_F792713686F24C9DBFFE7BE3C044E6DE_TA21Q2ZIX0012-taycan-side-view-frozenberrymetallic?w=2560&h=714&q=45&crop=faces%2Centropy%2Cedges&auto=format");
+		background-size: cover;
+		background-repeat: no-repeat;
+		position:absolute;
+
+	}
+	</style>
+	
+</head>
+<body>
+	<div id="car"></div>
+	<script type="text/javascript">
+		var x=0
+		// car.style.left = x;
+		
+		document.addEventListener("keydown", function(event){
+			console.log(event.key)
+			if (event.key=="ArrowRight"){
+				x=x+100
+				car.style.left = x+'px';
+			}
+
+			else {
+				console.log(event.key)
+			}
+		})
+	</script>
+
+</body>
+</html>
