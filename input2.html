@@ -4,12 +4,21 @@
 	
 	<title></title>
 	<style type="text/css">
+		body{
+	margin: 20px;
+		background-color:palegoldenrod;
+		font-family: 'Courgette', cursive;
+		text-decoration: none;
+				color:darkred;
+		font-size: 35px;
+	}
 		
 	</style>
+
 </head>
 <body>
 
-type in a name and get your chances of winning the lottery... <br>
+type in your name and get your chances of winning the lottery... <br>
 	<input id="text"></input>
 	<button id="submit">submit</button>
 
@@ -19,11 +28,11 @@ type in a name and get your chances of winning the lottery... <br>
 			console.log(text.value)
 
 			if (text.value =="julia") {
-				alert("wow! 100%!")
+				alert("wow! 100%! your chances were so good that you broke the calculator! ignore the number below")
 				answer.innerText = " "
 			}
 			if (text.value =="Julia") {
-				alert("wow! 100%!");
+				alert("wow! 100%! your chances were so good that you broke the calculator! ignore the number below");
 				answer.innerText = " "
 			}
 			// else {
